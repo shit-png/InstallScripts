@@ -27,3 +27,7 @@ f= open("/etc/apt/sources.list","w+")
 for line in lines:
     f.write(line)
     f.write('\n')
+
+stream = os.popen('sudo rm /home/pi/Downloads/Citrix.deb')
+output = stream.read()
+output
